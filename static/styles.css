@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Serif", sans-serif;
+}
+
+#card {
+  /* position: relative; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+
+  width: 100vw;
+  height: 46vh;
+
+  border-radius: 1px;
+  box-shadow: 10px 10px 50px black;
+  /* background: #333230; */
+  background-color: rgb(21, 32, 43);
+
+  font-size: 0.8em;
+  color: white;
+  padding-left: 10px;
+
+  overflow: hidden;
+}
+
+#sidebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  height: 50px;
+  padding: 0 30px;
+  color: #ff9999;
+
+  border-bottom: solid 2px gray;
+  margin-bottom: 20px;
+}
+
+#buttons {
+  display: flex;
+}
+
+#buttons > .button {
+  width: 8px;
+  height: 8px;
+  margin-left: 6px;
+
+  border-radius: 50%;
+}
+
+#buttons > .button:nth-child(1) {
+  border: solid 2px #00e025;
+}
+#buttons > .button:nth-child(1):hover {
+  background-color: #00e025;
+}
+
+#buttons > .button:nth-child(2) {
+  border: solid 2px #f7ad00;
+}
+#buttons > .button:nth-child(2):hover {
+  background-color: #f7ad00;
+}
+
+#buttons > .button:nth-child(3) {
+  border: solid 2px #e52b02;
+}
+#buttons > .button:nth-child(3):hover {
+  background-color: #e52b02;
+}
+
+#instructions {
+  position: relative;
+  height: 100%;
+  padding: 5px 15px;
+  color: #88c999;
+
+  font-size: 0.7rem;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin: 5px 0;
+}
+
+.row > .index {
+  opacity: 0.8;
+}
+
+.row > .instruction {
+  position: absolute;
+  left: 45px;
+}
+
+.keyword {
+  color: violet;
+}
+.key-var {
+  color: yellow;
+}
+.variable {
+  color: orange;
+}
+.function {
+  color: lightgreen;
+}
+.true {
+  color: lightseagreen;
+}
+.comment {
+  opacity: 0.6;
+}
+
+.indent1 > .instruction {
+  padding-left: 15px;
+}
+.indent2 > .instruction {
+  padding-left: 30px;
+}
